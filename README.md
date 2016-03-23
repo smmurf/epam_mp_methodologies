@@ -4,5 +4,5 @@
 
 Slides for lecture about different frameworks and methodologies.
 
-http://is4kov.github.io/epam-mp-methodologies
+http://is4kov.github.io/epam_mp_methodologies
 
