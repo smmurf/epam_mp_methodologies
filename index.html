@@ -4,17 +4,18 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>CSS Methodologies. BEM</title>
+		<title>CSS Methodologies & Frameworks</title>
 
-		<meta name="description" content="CSS Methodologies. BEM - internal EPAM Labs">
-		<meta name="author" content="Yevhen Isakov">
+		<meta name="description" content="CSS Methodologies & Frameworks - EPAM Mentoring Program 2016" />
+		<meta name="author" content="Yevhen Isakov" />
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<link rel="stylesheet" href="css/reveal.css">
+
 		<link rel="stylesheet" href="css/theme/epam.css" id="theme">
 
         <link rel="stylesheet" href="css/my.css" />
@@ -46,8 +47,9 @@
 			<div class="slides">
 
 				<section id="mainpage" data-state="mainpage method-bg" data-background="url(assets/i/lake_view.jpg)">
-                    <h1>Methodologies</h1>
+                    <h1>Methodologies & Frameworks</h1>
                     <h3>Yevhen Isakov</h3>
+					<time>25 March, 2016</time>
 				</section>
 
 				<section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
@@ -56,12 +58,263 @@
 
                 <section id="evolution" data-state="evolution" data-background="url(assets/i/wheel.jpg)"></section>
 
+                <section>
+                    <h2>Frameworks</h2>
+                </section>
+
+				<section id="bootstrap" data-state="bootstrap" data-background="url(assets/i/bootstrap.jpg)"></section>
+
+                <section>
+                    <h2>Bootstrap</h2>
+                    <div class="topic-container">
+                        <ul>
+                            <li class="fragment"><h4>Twitter, 2011</h4></li>
+                            <li class="fragment method-author">
+                                <img class="method-author__avatar" src="assets/i/otto.jpg" alt=""/>
+                                <h4>Mark Otto</h4>
+                                <p><a href="https://twitter.com/mdo" target="_blank">@mdo</a></p>
+                                <p><a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+				<section id="bootstrap-landing" data-state="bootstrap-landing" data-background="#fff url(assets/i/bootstrap-landing.jpg)"></section>
+
+				<section id="bootstrap-versions" data-state="bootstrap-versions">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Versions</h4>
+						<ul>
+							<li class="fragment">v3.3.6</li>
+							<li class="fragment">v4 - soon! <a href="http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/" target="_blank">blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="bootstrap-install" data-state="bootstrap-install">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Install</h4>
+						<ul>
+							<li class="fragment">
+								<div>via npm</div>
+								<pre><code>$ npm install bootstrap</code></pre>
+							</li>
+							<li class="fragment">
+								<div>via bower</div>
+								<pre><code>$ bower install bootstrap</code></pre>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="bootstrap-support" data-state="bootstrap-support">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Browsers Support</h4>
+						<div class="fragment">
+							<p><b>Latest versions</b> of all primary browsers and platforms.</p>
+							<img src="assets/i/bootstrap-browsers.jpg" alt="" width="120%"/>
+						</div>
+					</div>
+				</section>
+
+				<section id="bootstrap-grid-example" data-state="bootstrap-grid-example">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Grid example</h4>
+						<div class="row show-grid">
+							<div class="col-md-8">.col-md-8</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-md-6">.col-md-6</div>
+							<div class="col-md-6">.col-md-6</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="bootstrap-code-example" data-state="bootstrap-code-example">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Code example</h4>
+						<pre><code class="xml">&lt;code class="xml"&gt;&lt;div class="row show-grid"&gt;
+	&lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row show-grid"&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row show-grid"&gt;
+	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+				</section>
+
+				<section id="bootstrap-features" data-state="bootstrap-features">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Features</h4>
+						<ul>
+							<li class="fragment">Grids</li>
+							<li class="fragment">Themes</li>
+							<li class="fragment">Components</li>
+							<li class="fragment">Customization</li>
+							<li class="fragment">...Community</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation" data-state="foundation" data-background="#00a6ca url(assets/i/foundation.jpg)"></section>
+
+				<section id="foundation-author" data-state="foundation-author">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<ul>
+							<li class="fragment"><h4>ZURB</h4></li>
+							<li class="fragment">
+								<p><a href="http://foundation.zurb.com/" target="_blank">foundation.zurb.com</a></p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation-install" data-state="foundation-install">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Install</h4>
+						<ul>
+							<li class="fragment">
+								<div>via npm</div>
+								<pre><code>$ npm install -g foundation-cli</code></pre>
+								<pre><code>$ npm install foundation-sites</code></pre>
+							</li>
+							<li class="fragment">
+								<div>via bower</div>
+								<pre><code>$ bower install foundation-sites</code></pre>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation-grid-example" data-state="foundation-grid-example">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Grid example</h4>
+						<div class="row">
+							<div class="large-8 columns-t">.large-8</div>
+							<div class="large-4 columns-t">.large-4</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns-t">.large-4</div>
+							<div class="large-4 columns-t">.large-4</div>
+							<div class="large-4 columns-t">.large-4</div>
+						</div>
+						<div class="row">
+							<div class="large-6 columns-t">.large-6</div>
+							<div class="large-6 columns-t">.large-6</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="foundation-code-example" data-state="foundation-code-example">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Code example</h4>
+						<pre><code class="xml">&lt;div class="row"&gt;
+	&lt;div class="large-8 columns"&gt;.large-8&lt;/div&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="large-6 columns"&gt;.large-6&lt;/div&gt;
+	&lt;div class="large-6 columns"&gt;.large-6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+				</section>
+
+				<section id="foundation-features" data-state="foundation-features">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Features</h4>
+						<ul>
+							<li class="fragment">Grids</li>
+							<li class="fragment">Mobile First</li>
+							<li class="fragment">Themes (templates)</li>
+							<li class="fragment">Components</li>
+							<li class="fragment">Customization</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="legion" data-state="legion" data-background="#000 url(assets/i/legion.jpg)"></section>
+
+				<section id="good-or-evil" data-state="good-or-evil">
+					<h2>Good or evil?</h2>
+				</section>
+
+				<section id="frameworks-pros" data-state="frameworks-pros">
+					<ul>
+						<li>
+							<h3>Great collection <br />of ready-to-use components</h3>
+						</li>
+						<li class="fragment">
+							<h3>For all devices</h3>
+						</li>
+						<li class="fragment">
+							<h3>Github Community</h3>
+						</li>
+					</ul>
+				</section>
+
+				<section id="frameworks-cons" data-state="frameworks-cons">
+					<ul>
+						<li>
+							<h3>Fragility. Nothing is flawless</h3>
+						</li>
+						<li class="fragment">
+							<h3>Preset boundaries for development</h3>
+						</li>
+						<li class="fragment">
+							<h3>Preset boundaries for developer</h3>
+						</li>
+					</ul>
+				</section>
+
+				<section id="frameworks-cases-of-usage" data-state="framerowks-cases-of-usage">
+					<h3>Cases of usage</h3>
+					<div class="topic-container">
+						<ul class="frameworks-usage">
+							<li class="fragment">You do not have design</li>
+							<li class="fragment">You need quick prototyping</li>
+							<li class="fragment">You need sandbox / understanding how it works</li>
+							<li class="fragment">Your design is similar to framework's one</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Methodologies</h2>
+				</section>
+
+				<section id="to-be-or-not-to-be" data-state="to-be-or-not-to-be">
+					<h3>With or without?</h3>
+				</section>
 
                 <section id="newbie-code" data-state="newbie-code method-bg" data-background="#000 url(assets/i/newbie-code.jpg)" data-background-transition="fade"></section>
-
-                <section id="to-be-or-not-to-be" data-state="to-be-or-not-to-be">
-                    <h3>With or without?</h3>
-                </section>
 
                 <section id="omg" data-state="omg" data-background="url(assets/i/omg.png)"></section>
 
