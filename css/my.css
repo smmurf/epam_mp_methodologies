@@ -173,6 +173,11 @@ body .slide-background {
 	background-color: #fff;
 }
 
+.bootstrap-landing body .slide-background.present {
+	background-size: cover;
+	background-position: center !important;
+}
+
 .smacss-blurred .reveal .progress span {
 	background-color: #fff;
 }
@@ -201,6 +206,7 @@ body .slide-background {
 
 .bem-modifier-example-highlighted-2 body .slide-background {
 	background-position: center 2% !important;
+	background-size: contain !important;
 }
 
 .after-bgsize-cover body .slide-background {
