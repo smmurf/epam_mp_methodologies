@@ -129,7 +129,8 @@ body .slide-background {
 	background-position: right top !important;
 }
 
-.bem-tweet-magic body .slide-background.present {
+.bem-sample body .slide-background.present,
+.bem-sample-disassemble body .slide-background.present {
 	background-position: center !important;
 }
 
@@ -284,6 +285,11 @@ body .slide-background {
 }
 
 .omg body .slide-background.present {
+	background-position: center !important;
+	background-size: contain !important;
+}
+
+.support body .slide-background.present {
 	background-position: center !important;
 	background-size: contain !important;
 }

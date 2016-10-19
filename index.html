@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>CSS Methodologies & Frameworks</title>
+		<title>CSS Methodologies &amp; Frameworks</title>
 
 		<meta name="description" content="CSS Methodologies & Frameworks - EPAM Mentoring Program 2016" />
 		<meta name="author" content="Yevhen Isakov" />
@@ -47,9 +47,9 @@
 			<div class="slides">
 
 				<section id="mainpage" data-state="mainpage method-bg" data-background="url(assets/i/lake_view.jpg)">
-                    <h1>Methodologies & Frameworks</h1>
-                    <h3>Yevhen Isakov</h3>
-					<time>25 March, 2016</time>
+                    <h1>Methodologies &amp; Frameworks</h1>
+                    <h3>Anton Vernihor</h3>
+					<time>30 September, 2016</time>
 				</section>
 
 				<section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
@@ -79,15 +79,15 @@
                     </div>
                 </section>
 
-				<section id="bootstrap-landing" data-state="bootstrap-landing" data-background="#5c4283 url(assets/i/bootstrap-landing.jpg)"></section>
+				<section id="bootstrap-landing" data-state="bootstrap-landing" data-background="#5c4283 url(assets/i/bootstrap-landing-3.3.7.png)"></section>
 
 				<section id="bootstrap-versions" data-state="bootstrap-versions">
 					<h2>Bootstrap</h2>
 					<div class="topic-container">
 						<h4>Versions</h4>
 						<ul>
-							<li class="fragment">v3.3.6</li>
-							<li class="fragment">v4 - soon! <a href="http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/" target="_blank">blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha</a></li>
+							<li class="fragment">v3.3.7</li>
+							<li class="fragment">v4 - soon! <a href="http://blog.getbootstrap.com/2016/09/05/bootstrap-4-alpha-4/" target="_blank">blog.getbootstrap.com/2016/09/05/bootstrap-4-alpha-4</a></li>
 						</ul>
 					</div>
 				</section>
@@ -124,16 +124,16 @@
 					<h2>Bootstrap</h2>
 					<div class="topic-container">
 						<h4>Grid example</h4>
-						<div class="row show-grid">
+						<div class="row">
 							<div class="col-md-8">.col-md-8</div>
 							<div class="col-md-4">.col-md-4</div>
 						</div>
-						<div class="row show-grid">
+						<div class="row">
 							<div class="col-md-4">.col-md-4</div>
 							<div class="col-md-4">.col-md-4</div>
 							<div class="col-md-4">.col-md-4</div>
 						</div>
-						<div class="row show-grid">
+						<div class="row">
 							<div class="col-md-6">.col-md-6</div>
 							<div class="col-md-6">.col-md-6</div>
 						</div>
@@ -144,16 +144,16 @@
 					<h2>Bootstrap</h2>
 					<div class="topic-container">
 						<h4>Code example</h4>
-						<pre><code class="xml">&lt;div class="row show-grid"&gt;
+						<pre><code class="xml">&lt;div class="row"&gt;
 	&lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
 	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row show-grid"&gt;
+&lt;div class="row"&gt;
 	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
 	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
 	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="row show-grid"&gt;
+&lt;div class="row"&gt;
 	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
 	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -166,6 +166,7 @@
 						<h4>Features</h4>
 						<ul>
 							<li class="fragment">Grids</li>
+							<li class="fragment">Mobile First</li>
 							<li class="fragment">Themes</li>
 							<li class="fragment">Components</li>
 							<li class="fragment">Customization</li>
@@ -211,17 +212,17 @@
 					<div class="topic-container">
 						<h4>Grid example</h4>
 						<div class="row">
-							<div class="large-8 columns-t">.large-8</div>
-							<div class="large-4 columns-t">.large-4</div>
+							<div class="small-6 large-8 columns-t">.small-6 .large-8 .columns</div>
+							<div class="small-6 large-4 columns-t">.small-6 .large-4 .columns</div>
 						</div>
 						<div class="row">
-							<div class="large-4 columns-t">.large-4</div>
-							<div class="large-4 columns-t">.large-4</div>
-							<div class="large-4 columns-t">.large-4</div>
+							<div class="large-4 columns-t">.large-4 .columns</div>
+							<div class="large-4 columns-t">.large-4 .columns</div>
+							<div class="large-4 columns-t">.large-4 .columns</div>
 						</div>
 						<div class="row">
-							<div class="large-6 columns-t">.large-6</div>
-							<div class="large-6 columns-t">.large-6</div>
+							<div class="large-6 columns-t">.large-6 .columns</div>
+							<div class="large-6 columns-t">.large-6 .columns</div>
 						</div>
 					</div>
 				</section>
@@ -231,8 +232,12 @@
 					<div class="topic-container">
 						<h4>Code example</h4>
 						<pre><code class="xml">&lt;div class="row"&gt;
-	&lt;div class="large-8 columns"&gt;.large-8&lt;/div&gt;
-	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+	&lt;div class="small-6 large-8 columns"&gt;
+	    .small-6 .large-8 .columns
+	&lt;/div&gt;
+	&lt;div class="small-6 large-4 columns"&gt;
+	    .small-6 .large-4 .columns
+	&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="row"&gt;
 	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
@@ -260,8 +265,6 @@
 					</div>
 				</section>
 
-				<section id="legion" data-state="legion" data-background="#000 url(assets/i/legion.jpg)"></section>
-
 				<section id="good-or-evil" data-state="good-or-evil">
 					<h2>Good or evil?</h2>
 				</section>
@@ -283,9 +286,6 @@
 				<section id="frameworks-cons" data-state="frameworks-cons">
 					<ul>
 						<li>
-							<h3>Fragility. Nothing is flawless</h3>
-						</li>
-						<li class="fragment">
 							<h3>Preset boundaries for development</h3>
 						</li>
 						<li class="fragment">
@@ -314,9 +314,9 @@
 					<h3>With or without?</h3>
 				</section>
 
-                <section id="newbie-code" data-state="newbie-code method-bg" data-background="#000 url(assets/i/newbie-code.jpg)" data-background-transition="fade"></section>
-
                 <section id="omg" data-state="omg" data-background="url(assets/i/omg.png)"></section>
+
+                <section id="support" data-state="support" data-background="url(assets/i/project-support.jpg)"></section>
 
                 <section id="graph" data-state="graph" data-background="#fff url(assets/i/graph.png)"></section>
 
@@ -424,8 +424,6 @@
                     </div>
                 </section>
 
-                <section id="bem-another-abbr" data-state="bem-tweet-magic method-bg" data-background="#39c2d7 url(assets/i/bem-tweet-magic.png)" data-background-transition="none"></section>
-
                 <section id="bem-author" data-state="bem-blurred method-bg" data-background="#fff url(assets/i/bem-logo-blurred.png)" data-background-transition="none">
                     <h2>BEM</h2>
                     <ul>
@@ -488,10 +486,6 @@
 
                 <section id="everything-is-block" data-state="everything-is-block" data-background="#fff">
                     <h2><span class="first-letter">Everything</span> on page <span class="first-letter">is block</span></h2>
-                </section>
-
-                <section id="everything-is-block-2" data-state="everything-is-block-2" data-background="url(assets/i/bricks.jpg)">
-                    <h2>Everything on page is block</h2>
                 </section>
 
                 <section id="bem-block" data-state="bem-block">
@@ -576,8 +570,6 @@
                     </ul>
                 </section>
 
-                <section id="bem-element-example" data-state="epam-landing" data-background="url(assets/i/epam-landing-preview.jpg)"></section>
-
                 <section id="bem-element-example-blocks" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks.jpg)"></section>
 
                 <section id="bem-element-example-elements" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements.jpg)"></section>
@@ -603,11 +595,6 @@
 &lt;/header&gt;</code></pre>
                         </div>
                     </ul>
-                </section>
-
-                <section id="bem-tree" data-state="bem-tree">
-                    <h2>DOM Tree</h2>
-                    <h2 class="fragment bem-tree__header"><span class="first-letter">BEM</span> Tree</h2>
                 </section>
 
                 <section id="bem-modifier" data-state="bem-modifier">
@@ -645,29 +632,27 @@
                     </ul>
                 </section>
 
-                <section id="bem-modifier-example" data-state="epam-landing" data-background="url(assets/i/epam-landing-preview.jpg)"></section>
-
                 <section id="bem-modifier-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-modifiers.jpg)"></section>
 
                 <section id="bem-modifier-example-highlighted-2" data-state="bem-modifier-example-highlighted-2" data-background="url(assets/i/epam-landing-header-modifiers.jpg)">
                     <ul>
                         <li class="fragment">
         <pre><code class="xml">&lt;ul class="header-menu"&gt;
-    &lt;li class="header-menu__item header-menu__item_state_active"&gt;
+    &lt;li class="header-menu__item
+               header-menu__item_state_active"&gt;
         &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
     &lt;/li&gt;
     &lt;li class="header-menu__item"&gt;
         &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class="header-menu__item"&gt;
-        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
-    &lt;/li&gt;
+    ...
 &lt;/ul&gt;</code></pre>
                         </li>
                         <li class="fragment">
                             <pre><code class="xml">&lt;nav class="navigation"&gt;
     &lt;a class="navigation__item"&gt; ... &lt;/a&gt;
-    &lt;a class="navigation__item navigation__item_current"&gt; ... &lt;/a&gt;
+    &lt;a class="navigation__item
+              navigation__item_current"&gt; ... &lt;/a&gt;
 &lt;/nav&gt;</code></pre>
                         </li>
                     </ul>
@@ -718,7 +703,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section id="bem-block-vs-element" data-state="bem-block-vs-element">
                     <h2><span class="first-letter">B</span>lock or <span class="first-letter">e</span>lement?</h2>
                     <div class="topic-container">
@@ -796,15 +781,20 @@
                     </div>
                 </section>
 
+                <section id="bem-sample" data-state="bem-sample" data-background="#39c2d7 url(assets/i/bem-tweet-magic.png)" data-background-transition="none"></section>
+
+                <section id="bem-sample-disassemble" data-state="bem-sample-disassemble" data-background="#39c2d7 url(assets/i/bem-tweet-magic-disassemble.png)" data-background-transition="none"></section>
+
                 <section id="thank-you" data-state="thank-you">
                     <h2>Thank you!</h2>
 
                     <div class="author">
                         <img class="author-avatar" src="assets/i/avatar.jpg" alt="" />
                         <div class="author-main">
-                            <h4 class="author-name">Yevhen Isakov</h4>
+                            <h4 class="author-name">Anton Vernihor</h4>
                             <div class="author-contacts">
-                                <div class="author-contacts_twitter"><a href="https://twitter.com/is4kov" target="_blank">@is4kov</a></div>
+                                <div class="author-contacts__twitter"><a href="mailto:anton_vernihor@epam.com">anton_vernihor@epam.com</a></div>
+                                <div class="author-contacts__skype"><strong>Skype:</strong> ismmurf</div>
                             </div>
                         </div>
                     </div>
